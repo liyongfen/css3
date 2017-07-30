@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>box-shadow</title>
+	<!-- 
+		以元素的参考
+		1、x偏移量，正代表右，负数代表左
+		2、y偏移量，正代表下，负数代表上
+		3、模糊半径，只有正值，越大边缘越模糊。如果设置了负值表示没有阴影效果
+		4、阴影扩展半径，正负均可，正值阴影延伸扩展，负值缩小
+		5、投影方式
+
+		注：一次可以多设置几个参数，以都好分隔
+	 -->
+	<style>
+		.test{
+			height: 100px;
+			width: 100px;
+			margin: 0 auto;
+			margin-top:100px;
+			border: 1px solid #ddd;
+			box-shadow: 4px 2px 6px #333 inset,4px 2px 6px #f83;
+		}
+	</style>
+</head>
+<body>
+<div class="test">
+</div>
+</body>
+</html>

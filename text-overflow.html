@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>text-overflow</title>
+	<!-- 
+		1、属性值：clip、ellipsis
+
+		注：多行文字显示省略号，配合使用box实现
+	 -->
+	<style>
+		.test{
+			height: 100px;
+			width: 100px;
+			line-height: 25px;
+			margin: 0 auto;
+			margin-top:200px;
+			border:1px solid #333;
+
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 4;
+			
+			overflow: hidden;
+			/*white-space: normal;*/
+			text-overflow: ellipsis;
+			word-wrap: normal;
+		}
+	</style>
+</head>
+<body>
+<div class="test">
+	we are the rightttttttt, are you ok,
+	you can help me, wo are good friend.
+</div>
+</body>
+</html>
