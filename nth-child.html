@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>background-origin</title>
+	<style>
+		/*
+			注意从1开始，nth-child(n) n| 2n+1 2n ...n=0
+		*/
+		li{
+			padding:10px 0;
+		}
+		li:first-child{
+			padding-top:0;
+			color:blue;
+		}
+		li:last-child{
+			padding-bottom: 0;
+		}
+		li:nth-child(3){
+			color: red;
+		}
+		li:nth-last-child(3){/*倒数第几个*/
+			color: lightgreen;
+		}
+		ul li > a:first-of-type{/*当有多个子元素，某一类型子元素中的第一个*/
+			color: #fde;
+		}
+		/*
+			nth-of-type(n)
+			last-of-type
+			nth-last-of-type
+
+			only-child//仅含有一个子元素
+			only-of-type//含有多个子元素，选出唯一类型的子元素
+		*/
+	</style>
+</head>
+<body>
+<ul>
+	<li>1
+		<span>ddd</span>
+		<a href="javascript:;">aaa</a> 
+		<a href="javascript:;">eee</a>
+	</li>
+	<li>2<a href="javascript:;">bbb</a></li>
+	<li>3<a href="javascript:;">ccc</a></li>
+	<li>4<a href="javascript:;">ddd</a></li>
+</ul>
+</body>
+</html>
